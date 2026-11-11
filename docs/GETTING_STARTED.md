@@ -72,7 +72,7 @@ recorded field. The whole run takes a few minutes.
 
 ### Full trace corpus
 
-The repository ships about 115 MB of recorded traces. The complete corpus, with the coverage inputs
+The repository ships about 120 MB of recorded traces. The complete corpus, with the coverage inputs
 for all nine levels and every official-input stream, is above 700 MB and is not included. Tests that
 need a trace which is not present are compiled out unless you enable the `full-corpus` feature, so a
 default `cargo test` never fails on a missing file. If you have the full set of traces, copy them

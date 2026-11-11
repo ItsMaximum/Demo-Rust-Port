@@ -91,5 +91,27 @@
     "finish_confirmed": "flash",
     "derived_from": "gbeqe-finish-f217.tas",
     "listeners_state_trace": "reference/traces/flash32/gbe-qe-finish-f227-fp15-listeners-v1.jsonl"
+  },
+  {
+    "file": "finishes/gbeqe-finish-f227-fp14.tas",
+    "name": "Gut Bus Extreme: one-frame QE finish with 14 frame-perfect inputs, finish 227",
+    "level": 3214,
+    "character": 4,
+    "frames": 227,
+    "sha256": "44d3097a8fa6d0462cefdd54484a2be21f62f013e9d72d8f5715a06086f87a06",
+    "finish_frame": 227,
+    "finish_confirmed": "flash",
+    "listeners_state_trace": "reference/traces/flash32/gbe-qe-finish-f227-fp14-listeners-v2.jsonl"
+  },
+  {
+    "file": "finishes/gbeqe-finish-f227-fp13.tas",
+    "name": "Gut Bus Extreme: one-frame QE finish with 13 frame-perfect inputs, finish 227",
+    "level": 3214,
+    "character": 4,
+    "frames": 227,
+    "sha256": "a30d3950a2d74444f8f5bb4808d1c7a89db396c863e15ff3fce6c3e411ee6d1d",
+    "finish_frame": 227,
+    "finish_confirmed": "flash",
+    "listeners_state_trace": "reference/traces/flash32/gbe-qe-finish-f227-fp13-listeners-v1.jsonl"
   }
 ]

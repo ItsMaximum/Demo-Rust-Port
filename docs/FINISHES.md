@@ -31,9 +31,8 @@ times. Where a string was derived from another, the source is in `derived_from` 
 The 15 and 23 reductions were made by searches whose own outputs are not in this repository, so their exact search
 runs are not recorded here.
 
-**Flash status.** All six are valid finishes in the real game. The 14 and 13 runs carry verification records
-(`finishes/*.verification.json`) showing a match against the original Flash trace; the trace for the 13 run is not in
-the shipped trace subset, and `launches.json` does not list the 13 and 14 finishes.
+**Flash status.** All six are valid finishes in the real game and are listed in `reference/tas/launches.json` with
+their Flash traces. The 14 and 13 runs also carry verification records (`finishes/*.verification.json`).
 
 ## The strings
 

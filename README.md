@@ -84,7 +84,7 @@ are in [docs/OBSTACLE_COURSE.md](docs/OBSTACLE_COURSE.md).
 cargo test --release --features hw-cli/lab
 ```
 
-The repository ships a subset of the recorded traces (about 115 MB). Tests that need the rest are behind
+The repository ships a subset of the recorded traces (about 120 MB). Tests that need the rest are behind
 the `full-corpus` feature; see [GETTING_STARTED.md](docs/GETTING_STARTED.md).
 
 ## License
