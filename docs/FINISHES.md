@@ -1,7 +1,7 @@
 # Finish strings
 
 Every finishing input found so far, with when it was found and how. All are for character 4 (motorcart) and
-finish by a one-frame quantum-entanglement (QE) launch ([SEARCH.md](SEARCH.md)). They were found by ItsMaximum
+finish by a one-frame quantum-entanglement (QE) launch ([SEARCH.md](SEARCH.md)). They were found by Maximum
 using the search tools in this repository. A TAS is eight bits per frame (left, right, up, down, space, shift,
 ctrl, z); see [CLI.md](CLI.md). "Frame-perfect" (FP) inputs are key presses or releases that must land on one exact
 frame.
