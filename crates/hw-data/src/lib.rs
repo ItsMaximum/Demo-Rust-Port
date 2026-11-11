@@ -1,6 +1,6 @@
 //! Baked, measured constants: the display-object properties the game reads for each character
-//! and level (post-Flash-quantisation bits, from tools/probes/ConstantsProbe.as), and the TAS
-//! strings from hw_all_v98.swf. Numbers are `[hi, lo]` words of an IEEE double.
+//! and level (post-Flash-quantisation bits, measured in the game; the recording probe is not part of
+//! this repository), and the official TAS strings. Numbers are `[hi, lo]` words of an IEEE double.
 #![no_std]
 
 pub mod generated;

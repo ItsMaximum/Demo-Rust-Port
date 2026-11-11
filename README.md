@@ -57,6 +57,7 @@ More: [docs/GETTING_STARTED.md](docs/GETTING_STARTED.md).
 | [SEARCH.md](docs/SEARCH.md) | what QE and pairmax are, the search commands, and how they work |
 | [SEARCH_RECIPES.md](docs/SEARCH_RECIPES.md) | copy-paste searches: finding a QE launch, then minimising its frame-perfect inputs |
 | [OBSTACLE_COURSE.md](docs/OBSTACLE_COURSE.md) | the level 45 research: measured mechanics and what is still unsolved |
+| [REPOSITORY.md](docs/REPOSITORY.md) | directory layout, crate dependencies, the `reference/` file formats, generated files |
 | [TRACE_FORMAT.md](docs/TRACE_FORMAT.md) | how the Flash traces are recorded and what a match proves |
 | [MATH.md](docs/MATH.md) | how the Flash-exact math is implemented and measured |
 | [PORTING.md](docs/PORTING.md) | conventions for contributing to the port |
