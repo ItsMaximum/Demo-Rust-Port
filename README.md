@@ -56,6 +56,7 @@ More: [docs/GETTING_STARTED.md](docs/GETTING_STARTED.md).
 | [CLI.md](docs/CLI.md) | `hw` reference and the TAS format |
 | [SEARCH.md](docs/SEARCH.md) | what QE and pairmax are, the search commands, and how they work |
 | [SEARCH_RECIPES.md](docs/SEARCH_RECIPES.md) | copy-paste searches: finding a QE launch, then minimising its frame-perfect inputs |
+| [FINISHES.md](docs/FINISHES.md) | every found finish string, when and how it was found |
 | [OBSTACLE_COURSE.md](docs/OBSTACLE_COURSE.md) | the level 45 research: measured mechanics and what is still unsolved |
 | [REPOSITORY.md](docs/REPOSITORY.md) | directory layout, crate dependencies, the `reference/` file formats, generated files |
 | [TRACE_FORMAT.md](docs/TRACE_FORMAT.md) | how the Flash traces are recorded and what a match proves |
@@ -69,8 +70,10 @@ was recorded in the real game for comparison.
 
 | Level | Character | Finish | File |
 | --- | --- | --- | --- |
-| Gut Bus Extreme (3214) | 4 | frame 227 (7.57 s), 15 frame-perfect inputs | `reference/tas/finishes/gbeqe-finish-f227-fp15.tas` |
+| Gut Bus Extreme (3214) | 4 | frame 227 (7.57 s), 13 frame-perfect inputs | `reference/tas/finishes/gbeqe-finish-f227-fp13.tas` |
 | A large Satan eats u (2433) | 4 | frame 125 (4.17 s), 23 frame-perfect inputs | `reference/tas/finishes/satanqe-finish-f125-fp23.tas` |
+
+Every finish string, with when and how it was found, is listed in [docs/FINISHES.md](docs/FINISHES.md).
 
 Obstacle Course (level 45) with Irresponsible Dad has no sub-10-second finish yet; the findings so far
 are in [docs/OBSTACLE_COURSE.md](docs/OBSTACLE_COURSE.md).
