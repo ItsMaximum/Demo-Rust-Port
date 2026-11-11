@@ -1,0 +1,23 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Rust
+        run: |
+          rustup toolchain install stable --profile minimal --target i686-pc-windows-msvc
+          rustup default stable
+      - name: Build
+        run: cargo build --release --workspace --features hw-cli/lab
+      - name: Test
+        run: cargo test --release --features hw-cli/lab
+      - name: Verify shipped traces
+        run: ./tools/verify-corpus.ps1
+        shell: pwsh

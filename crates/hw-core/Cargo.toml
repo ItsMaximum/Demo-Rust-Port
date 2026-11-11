@@ -1,0 +1,23 @@
+[package]
+name = "hw-core"
+version.workspace = true
+edition.workspace = true
+publish.workspace = true
+license.workspace = true
+
+[dependencies]
+hw-real = { path = "../hw-real", default-features = false }
+hw-flashmath = { path = "../hw-flashmath", default-features = false }
+hw-data = { path = "../hw-data" }
+
+[features]
+default = ["std"]
+std = ["hw-real/std", "hw-flashmath/std"]
+portable-math = ["hw-flashmath/portable-math"]
+# Enable the tests that need the full Flash trace corpus (docs/GETTING_STARTED.md, "Full trace corpus").
+full-corpus = []
+# Research hooks for launch analysis and search tooling (src/lab.rs); never a default.
+lab = ["std"]
+
+[dev-dependencies]
+serde_json = "1"

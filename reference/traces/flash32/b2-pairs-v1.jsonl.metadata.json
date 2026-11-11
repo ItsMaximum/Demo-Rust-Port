@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "probe_sha256": "98f5f057d9331a06a901b2b66fcee903f695f98a7e9db1f400e8fb803b8bcc08",
+  "sol_sha256": [
+    "d99383bbdf582b37459ef08a4daa8511ecd052b92bc803d1c26db913ae65ef20"
+  ],
+  "trace_sha256": "a36a28f6fd3a0a2ddc4659ca4f4339c2c4a6ef65383bf32c5f2b33ce797c772f",
+  "player_sha256": "92cdd70c95ffe111269de242b2fee4be3d193fa75e6ab8e0557f07a833c5c919",
+  "records": 150,
+  "imported": "2026-09-20T01:15:32"
+}

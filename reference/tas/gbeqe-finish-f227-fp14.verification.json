@@ -1,0 +1,30 @@
+{
+  "schema": 2,
+  "verified_utc": "2026-09-30T02:55:27.6391688Z",
+  "level": 3214,
+  "character": 4,
+  "finish": 227,
+  "seconds": 7.566666666666666,
+  "frame_perfect": 14,
+  "raw_key_events": 21,
+  "structural_cost": 15,
+  "tas": "reference/tas/gbeqe-finish-f227-fp14.tas",
+  "tas_entries": 227,
+  "tas_sha256": "44d3097a8fa6d0462cefdd54484a2be21f62f013e9d72d8f5715a06086f87a06",
+  "trace": "reference/traces/flash32/gbe-qe-finish-f227-fp14-listeners-v2.jsonl",
+  "trace_frames": 277,
+  "trace_sha256": "e05d6cd0d0ef11d7b170ab355f031092155fa28bd88d16c2324be9ff6d5c9c7e",
+  "verification": "MATCH diagnostic-v1: 277 frames, level 3214, character 4, finish 227",
+  "player_sha256": "92cdd70c95ffe111269de242b2fee4be3d193fa75e6ab8e0557f07a833c5c919",
+  "native_events": {
+    "entries": 227,
+    "events": 21,
+    "finish": 227,
+    "frame_perfect": 14,
+    "limit": 277,
+    "tas": "best-cost15-fp14-ev21-f227.tas"
+  },
+  "source_search": "gbe-aligned-repair-14",
+  "source_file": "best-cost15-fp14-ev21-f227.tas",
+  "scope": "New fewest-FP GBE completion, exact diagnostic Flash32match through277 frames and independently remeasured native events at277-frame ceiling. Fastest217-frame completion unchanged. Numeric comparison has no tolerance."
+}

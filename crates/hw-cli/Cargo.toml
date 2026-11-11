@@ -1,0 +1,31 @@
+[package]
+name = "hw-cli"
+version.workspace = true
+edition.workspace = true
+publish.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "hw"
+path = "src/main.rs"
+
+# Launch analysis and input search (docs/SEARCH.md). Needs the research hooks:
+# cargo build --release -p hw-cli --features lab --bin hw-search
+[[bin]]
+name = "hw-search"
+path = "src/search/main.rs"
+required-features = ["lab"]
+
+[dependencies]
+hw-real = { path = "../hw-real" }
+hw-flashmath = { path = "../hw-flashmath" }
+hw-core = { path = "../hw-core" }
+hw-data = { path = "../hw-data" }
+# Preserve checkpoint fitness bits when parsing their shortest decimal exports.
+serde_json = { version = "1", features = ["float_roundtrip"] }
+
+[features]
+portable-math = ["hw-core/portable-math", "hw-flashmath/portable-math"]
+lab = ["hw-core/lab"]
+# Enable the tests that need the full Flash trace corpus (docs/GETTING_STARTED.md, "Full trace corpus").
+full-corpus = []

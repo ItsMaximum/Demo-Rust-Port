@@ -1,0 +1,9 @@
+{
+  "character": 1,
+  "frames": 600,
+  "generator": "hw-inputs-v1",
+  "level": 13812,
+  "prng": "SplitMix32",
+  "seed": 1941655770,
+  "style": "idle"
+}

@@ -1,0 +1,12 @@
+[package]
+name = "obby-search"
+version = "0.1.0"
+edition = "2021"
+publish = false
+license = "MIT OR Apache-2.0"
+description = "Obstacle Course (level 45) Irresponsible Dad QE / pairmax search on the Flash-verified port"
+
+[dependencies]
+hw-core = { path = "../hw-core", features = ["lab"] }
+hw-data = { path = "../hw-data" }
+hw-real = { path = "../hw-real" }

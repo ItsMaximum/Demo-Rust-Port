@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "probe_sha256": "3a3dd6a76158a06054eebff9a28ca46db94d3da6a16c40491830d0c76dbdcb62",
+  "sol_sha256": [
+    "b0b1fb32ed49e3deb933a79abb4f854503e26db003b8d06014f05853237be2ff"
+  ],
+  "trace_sha256": "d2727c2cfa9340aedacf15b9d1035dfb81441bb199426a835554f9e3712db8b1",
+  "player_sha256": "92cdd70c95ffe111269de242b2fee4be3d193fa75e6ab8e0557f07a833c5c919",
+  "records": 300,
+  "imported": "2026-09-20T11:23:51",
+  "level": 45,
+  "character": 3,
+  "level_shapes_only": false,
+  "tas_frames": 1,
+  "frames": 300,
+  "steps_per_tick": 25,
+  "level_only": false,
+  "level_impulses": false,
+  "level_actors": false,
+  "base_character": false,
+  "character_physics": true,
+  "character_controls": false,
+  "composites": false,
+  "composite_breaks": false,
+  "damage": null,
+  "wheelchair_damage": null,
+  "gears": false,
+  "bicycle_damage": "child-detach",
+  "dump_from": 9,
+  "dump_to": 61,
+  "tas_sha256": "7e071fd9b023ed8f18458a73613a0834f6220bd5cc50357ba3493c6040a9ea8c"
+}

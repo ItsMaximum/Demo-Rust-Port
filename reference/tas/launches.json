@@ -1,0 +1,95 @@
+[
+  {
+    "file": "bmx610.tas",
+    "name": "bmx park II 6.10 (corrected string from the TAS author)",
+    "level": 13196,
+    "character": 3,
+    "frames": 183,
+    "sha256": "5ee2bc271eba595812b14af891e1c5498df26543b5ab3061c4e0a1d75548d2ab",
+    "finish_frame": 183,
+    "finish_confirmed": "flash",
+    "derived_from": "bmx610_v98.tas",
+    "listeners_state_trace": "reference/traces/flash32/bmx610-corrected-listeners-v1.jsonl"
+  },
+  {
+    "file": "satanqe.tas",
+    "name": "A large Satan eats u: effective shopper brief QE, no finish",
+    "level": 2433,
+    "character": 4,
+    "frames": 300,
+    "sha256": "ea8a96aaf796737a13a1dc78980840ddffcec14969f085707d66701a24132d53",
+    "finish_frame": null,
+    "finish_confirmed": "flash",
+    "listeners_state_trace": "reference/traces/flash32/satanqe-listeners-v1.jsonl"
+  },
+  {
+    "file": "gbeqe.tas",
+    "name": "Gut Bus Extreme: effective shopper QE (no finish)",
+    "level": 3214,
+    "character": 4,
+    "frames": 268,
+    "sha256": "684701419cd5972d507d45524cf194d6eee161e5241435ca322f4c9afc133ee5",
+    "finish_frame": null,
+    "finish_confirmed": "flash",
+    "listeners_state_trace": "reference/traces/flash32/gbeqe-listeners-v1.jsonl"
+  },
+  {
+    "file": "traptracqe.tas",
+    "name": "TrapTrac: Segway Guy QE attempt (no finish)",
+    "level": 10251,
+    "character": 2,
+    "frames": 61,
+    "sha256": "49eebf7f869f992a67b167af57471a5fe30b867573b0cf941a5cbe7279d00b9a",
+    "finish_frame": null,
+    "finish_confirmed": "flash",
+    "listeners_state_trace": "reference/traces/flash32/traptracqe-listeners-v1.jsonl"
+  },
+  {
+    "file": "gbeqe-finish-f217.tas",
+    "name": "Gut Bus Extreme: one-frame QE launch to the finish (top border -> right wall -> shaft)",
+    "level": 3214,
+    "character": 4,
+    "frames": 217,
+    "sha256": "ae00b11f53912d68f7bcab3974704728d1475f157189cf0c1e8c060f9de2be98",
+    "finish_frame": 217,
+    "finish_confirmed": "flash",
+    "derived_from": "gbeqe.tas",
+    "listeners_state_trace": "reference/traces/flash32/gbe-qe-finish-f217-listeners-v1.jsonl"
+  },
+  {
+    "file": "satanqe-finish-f125.tas",
+    "name": "A large Satan eats u: one-frame QE launch to the finish (top border -> right wall -> pocket)",
+    "level": 2433,
+    "character": 4,
+    "frames": 125,
+    "sha256": "3ae08bc4fd114db7a2efe25e3c47f8a1c95d24766e227d46783fa4c9c514002a",
+    "finish_frame": 125,
+    "finish_confirmed": "flash",
+    "derived_from": "search/satan/launch-miss1.96m-f125.tas",
+    "listeners_state_trace": "reference/traces/flash32/satan-qe-finish-f125-listeners-v1.jsonl"
+  },
+  {
+    "file": "satanqe-finish-f125-fp23.tas",
+    "name": "A large Satan eats u: one-frame QE finish with 23 frame-perfect inputs (the first solve has 33)",
+    "level": 2433,
+    "character": 4,
+    "frames": 125,
+    "sha256": "b2439dd8447e660d3109fb4e150e25b54a3ab35c2b9e63c672be17cc11293957",
+    "finish_frame": 125,
+    "finish_confirmed": "flash",
+    "derived_from": "satanqe-finish-f125.tas",
+    "listeners_state_trace": "reference/traces/flash32/satan-qe-finish-f125-fp23-listeners-v1.jsonl"
+  },
+  {
+    "file": "gbeqe-finish-f227-fp15.tas",
+    "name": "Gut Bus Extreme: one-frame QE finish with 15 frame-perfect inputs (the first solve has 27), 10 frames slower",
+    "level": 3214,
+    "character": 4,
+    "frames": 227,
+    "sha256": "d5c88682068c171c16f8919c2c16fd0a2faacdab82cba50b055f16f1b3c58212",
+    "finish_frame": 227,
+    "finish_confirmed": "flash",
+    "derived_from": "gbeqe-finish-f217.tas",
+    "listeners_state_trace": "reference/traces/flash32/gbe-qe-finish-f227-fp15-listeners-v1.jsonl"
+  }
+]

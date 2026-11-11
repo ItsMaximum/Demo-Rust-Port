@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "level": 45,
+  "character": 3,
+  "entries": 299,
+  "tas_bytes": 2392,
+  "tas_sha256": "770e410f2d831532335dcad5bbc4bf0b30de38fde235686a0d3852338ade5d2c",
+  "finish_frame": 0,
+  "original_player": "Source Material/flashplayer_32_sa.exe",
+  "original_player_version": "32.0.0.207 (32-bit)",
+  "original_player_sha256": "92cdd70c95ffe111269de242b2fee4be3d193fa75e6ab8e0557f07a833c5c919",
+  "actual_verifier_stdout": "MATCH diagnostic-v1: 299 frames, level 45, character 3, finish 0",
+  "diagnostic_streams": 5,
+  "detailed_dump_frames": [
+    140,
+    299
+  ],
+  "flash_trace_sha256": "ddc91d9a7cea5f269379e640fd721db053c1d6377aa6b6bae198ff6a212c6a24",
+  "comparison_result_sha256": "8acfb8335370dbe7526499ee794c26f0c3d76bd6108521c42479af7297cc27b9",
+  "independent_comparison_review_sha256": "f90b27c3f190d898e70794f4dec575acf33f1279483589609ed6f245aa3cd9d5",
+  "evidence_root": "2026-10-07-obstacle-01",
+  "recording": "obstacle-dad-progress-586-observers-v1",
+  "comparison": "verify-progress-586-v1",
+  "qualification": "Exact recorded nonwinning replay calibration. Dad has a measured burst at frame178. No completion, persistent arena identity or causal QE/pairmax mechanism certificate is claimed."
+}

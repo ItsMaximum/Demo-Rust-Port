@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "probe_sha256": "53314456387ae1ce9f0ea2a3c218f4f0d0be6b564850a450c97c23b5e93f3762",
+  "sol_sha256": [
+    "20a9d9a0f468daeef7e3eaf16fe1bcc71ebd569d0a66855c1a6760ac692cf0d6",
+    "95beee154f66c1ef852b250b0124cb3291475530ce3f8b08d2a70e831501dce1"
+  ],
+  "trace_sha256": "b8577c125ecbb2b58fc7ff439134b5e073c2f9b2b079cd7a56856330423305fa",
+  "player_sha256": "92cdd70c95ffe111269de242b2fee4be3d193fa75e6ab8e0557f07a833c5c919",
+  "records": 600,
+  "imported": "2026-09-20T11:17:02",
+  "level": 3214,
+  "character": 3,
+  "level_shapes_only": false,
+  "tas_frames": 256,
+  "frames": 600,
+  "steps_per_tick": 25,
+  "level_only": false,
+  "level_impulses": false,
+  "level_actors": false,
+  "base_character": false,
+  "character_physics": false,
+  "character_controls": false,
+  "composites": false,
+  "composite_breaks": false,
+  "damage": null,
+  "wheelchair_damage": null,
+  "gears": false,
+  "dump_from": 1,
+  "dump_to": 3,
+  "tas_sha256": "e9bd0a91fb45a8d98144dc7b6a5df5602c1d4226fc51e9ff73200a2abb39bcd8"
+}

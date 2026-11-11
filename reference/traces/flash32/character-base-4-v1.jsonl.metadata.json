@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "probe_sha256": "b457d774a62d8180358fed17e61e4a5873e2c695111c6a98dab93a2c0cf15e80",
+  "sol_sha256": [
+    "b70b454e644aea91766d7307006d6c96dace4abf59f3a8cf13aea630f199f4e2"
+  ],
+  "trace_sha256": "d66bf16ff20bc4087427640bcb532ffed0ed2c90c0bf6a1b99e35fef60e8650b",
+  "player_sha256": "92cdd70c95ffe111269de242b2fee4be3d193fa75e6ab8e0557f07a833c5c919",
+  "records": 300,
+  "imported": "2026-09-20T10:00:55",
+  "level": 45,
+  "character": 4,
+  "level_shapes_only": false,
+  "tas_frames": 1,
+  "frames": 300,
+  "steps_per_tick": 25,
+  "level_only": false,
+  "level_impulses": false,
+  "level_actors": false,
+  "base_character": true,
+  "dump_from": 1,
+  "dump_to": 2,
+  "tas_sha256": "7e071fd9b023ed8f18458a73613a0834f6220bd5cc50357ba3493c6040a9ea8c"
+}

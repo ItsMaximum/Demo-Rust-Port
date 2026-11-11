@@ -1,0 +1,19 @@
+[package]
+name = "hw-flashmath"
+version.workspace = true
+edition.workspace = true
+publish.workspace = true
+license.workspace = true
+
+[dependencies]
+hw-real = { path = "../hw-real", default-features = false }
+libm = "0.2"
+
+[features]
+default = ["std"]
+std = ["hw-real/std"]
+# Use the portable (u32-limb) math implementation even on i686 Windows.
+portable-math = []
+
+[dev-dependencies]
+serde_json = "1"

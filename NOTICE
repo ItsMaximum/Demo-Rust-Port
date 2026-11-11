@@ -1,0 +1,35 @@
+Third-party notices
+
+1. x87 transcendental functions (crates/hw-flashmath/src/x87_*.rs)
+   These files are derived from the Bochs x86 emulator's FPU sources
+   (fsincos.cc, fpatan.cc, f128_67.cc and the generated constant headers) at
+   commit c38d6a4ab10e084b7d52d6606e90b7395c6e688f, which extend the SoftFloat
+   IEC/IEEE Floating-point Arithmetic Package by John Hauser. The notice those
+   files carry is retained in crates/hw-flashmath/src/x87-LICENSE.txt and
+   applies to the parts of the code that are retained. The unmodified constant
+   headers are kept under reference/math/bochs-x87.
+
+2. Box2DFlashAS3 2.0.2
+   The physics code in crates/hw-core/src/b2 is a statement-by-statement Rust
+   port of Box2DFlashAS3 2.0.2, a port of Box2D by Erin Catto, distributed
+   under the zlib license:
+
+     This software is provided 'as-is', without any express or implied
+     warranty. In no event will the authors be held liable for any damages
+     arising from the use of this software. Permission is granted to anyone
+     to use this software for any purpose, including commercial applications,
+     and to alter it and redistribute it freely, subject to the following
+     restrictions: 1. The origin of this software must not be misrepresented;
+     you must not claim that you wrote the original software. If you use this
+     software in a product, an acknowledgment in the product documentation
+     would be appreciated but is not required. 2. Altered source versions must
+     be plainly marked as such, and must not be misrepresented as being the
+     original software. 3. This notice may not be removed or altered from any
+     source distribution.
+
+3. The game
+   This project is an independent, unofficial research tool. The game it
+   models, its levels, characters and trademarks belong to their respective
+   owners. No game binaries, Flash Player binaries or decompiled game source
+   are distributed here. The baked numeric tables in crates/hw-data and the
+   recorded traces under reference/ are measurements of the game's behaviour.
