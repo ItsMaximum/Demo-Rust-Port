@@ -100,8 +100,8 @@ fn primary_damage_recording_preserves_full299_root10_and_comparator() {
         .stack_size(64 << 20)
         .spawn(|| {
             let cases = [
-                ("root10", include_str!("../../../reference/tas/obstacle-dad-ceiling-strand-f143.tas"), true),
-                ("pulse comparator", include_str!("../../../reference/tas/obstacle-dad-pulse127-3-f139.tas"), false),
+                ("root10", include_str!("../../../reference/tas/obstacle-course/obstacle-dad-ceiling-strand-f143.tas"), true),
+                ("pulse comparator", include_str!("../../../reference/tas/obstacle-course/obstacle-dad-pulse127-3-f139.tas"), false),
             ];
             for (name, bits, chest_consumed) in cases {
                 let m = masks(bits);
@@ -138,8 +138,8 @@ fn passive_pair_exhaustion_capture_preserves_exact_full299_controls() {
             let cases = [
                 // Exact nonwinning Original Flash MATCH controls. Capture is a
                 // diagnostic witness, never a finish or collision certificate.
-                ("pairmax-f274", include_str!("../../../reference/tas/obstacle-pairmax-f274.tas"), 274),
-                ("late-overflow-f291", include_str!("../../../reference/tas/obstacle-dad-late-overflow-f291.tas"), 291),
+                ("pairmax-f274", include_str!("../../../reference/tas/obstacle-course/obstacle-pairmax-f274.tas"), 274),
+                ("late-overflow-f291", include_str!("../../../reference/tas/obstacle-course/obstacle-dad-late-overflow-f291.tas"), 291),
             ];
             for (name, bits, expected_first_site2) in cases {
                 assert_eq!(bits.len(), 299 * 8, "{name}: preserve all 299 exact entries");

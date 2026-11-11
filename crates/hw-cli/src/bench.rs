@@ -40,8 +40,8 @@ fn corpus(set: &str) -> Result<Vec<Case>> {
         }
     }
     if set == "generated" || set == "all" {
-        let text = std::fs::read_to_string("reference/tas/extra/plan.json")
-            .map_err(|e| format!("reference/tas/extra/plan.json (run from the workspace root): {e}"))?;
+        let text = std::fs::read_to_string("reference/tas/coverage/plan.json")
+            .map_err(|e| format!("reference/tas/coverage/plan.json (run from the workspace root): {e}"))?;
         let plan: serde_json::Value = serde_json::from_str(&text).map_err(|e| e.to_string())?;
         for case in plan["cases"].as_array().ok_or("plan.json has no cases")? {
             let path = case["tas"].as_str().ok_or("case without tas")?;

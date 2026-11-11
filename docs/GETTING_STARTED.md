@@ -35,7 +35,7 @@ $hw = "target/i686-pc-windows-msvc/release/hw.exe"
 # Run a TAS and write one JSON record per frame (runs/ is ignored by git); the last line of console
 # output reports the finish frame
 New-Item -ItemType Directory -Force runs | Out-Null
-& $hw sim --level 3214 --char 4 --tas reference/tas/gbeqe-finish-f227-fp15.tas --out runs/gbe.jsonl
+& $hw sim --level 3214 --char 4 --tas reference/tas/finishes/gbeqe-finish-f227-fp15.tas --out runs/gbe.jsonl
 
 # Compare a recorded Flash trace with the port, hash for hash
 & $hw verify --trace reference/traces/flash32/tas-dotd_pairmax_1-diagnostic-v1.jsonl

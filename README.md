@@ -40,7 +40,7 @@ cargo build --release -p hw-cli --features lab
 target/i686-pc-windows-msvc/release/hw.exe verify --trace reference/traces/flash32/tas-dotd_pairmax_1-diagnostic-v1.jsonl
 
 # Run a found input: Gut Bus Extreme (level 3214, character 4), finishing on frame 227
-target/i686-pc-windows-msvc/release/hw.exe sim --level 3214 --char 4 --tas reference/tas/gbeqe-finish-f227-fp15.tas
+target/i686-pc-windows-msvc/release/hw.exe sim --level 3214 --char 4 --tas reference/tas/finishes/gbeqe-finish-f227-fp15.tas
 
 # List the search commands
 target/i686-pc-windows-msvc/release/hw-search.exe help
@@ -69,8 +69,8 @@ was recorded in the real game for comparison.
 
 | Level | Character | Finish | File |
 | --- | --- | --- | --- |
-| Gut Bus Extreme (3214) | 4 | frame 227 (7.57 s), 15 frame-perfect inputs | `reference/tas/gbeqe-finish-f227-fp15.tas` |
-| A large Satan eats u (2433) | 4 | frame 125 (4.17 s), 23 frame-perfect inputs | `reference/tas/satanqe-finish-f125-fp23.tas` |
+| Gut Bus Extreme (3214) | 4 | frame 227 (7.57 s), 15 frame-perfect inputs | `reference/tas/finishes/gbeqe-finish-f227-fp15.tas` |
+| A large Satan eats u (2433) | 4 | frame 125 (4.17 s), 23 frame-perfect inputs | `reference/tas/finishes/satanqe-finish-f125-fp23.tas` |
 
 Obstacle Course (level 45) with Irresponsible Dad has no sub-10-second finish yet; the findings so far
 are in [docs/OBSTACLE_COURSE.md](docs/OBSTACLE_COURSE.md).

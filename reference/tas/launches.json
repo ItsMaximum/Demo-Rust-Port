@@ -1,6 +1,6 @@
 [
   {
-    "file": "bmx610.tas",
+    "file": "official/bmx610.tas",
     "name": "bmx park II 6.10 (corrected string from the TAS author)",
     "level": 13196,
     "character": 3,
@@ -12,7 +12,7 @@
     "listeners_state_trace": "reference/traces/flash32/bmx610-corrected-listeners-v1.jsonl"
   },
   {
-    "file": "satanqe.tas",
+    "file": "qe-seeds/satanqe.tas",
     "name": "A large Satan eats u: effective shopper brief QE, no finish",
     "level": 2433,
     "character": 4,
@@ -23,7 +23,7 @@
     "listeners_state_trace": "reference/traces/flash32/satanqe-listeners-v1.jsonl"
   },
   {
-    "file": "gbeqe.tas",
+    "file": "qe-seeds/gbeqe.tas",
     "name": "Gut Bus Extreme: effective shopper QE (no finish)",
     "level": 3214,
     "character": 4,
@@ -34,7 +34,7 @@
     "listeners_state_trace": "reference/traces/flash32/gbeqe-listeners-v1.jsonl"
   },
   {
-    "file": "traptracqe.tas",
+    "file": "qe-seeds/traptracqe.tas",
     "name": "TrapTrac: Segway Guy QE attempt (no finish)",
     "level": 10251,
     "character": 2,
@@ -45,7 +45,7 @@
     "listeners_state_trace": "reference/traces/flash32/traptracqe-listeners-v1.jsonl"
   },
   {
-    "file": "gbeqe-finish-f217.tas",
+    "file": "finishes/gbeqe-finish-f217.tas",
     "name": "Gut Bus Extreme: one-frame QE launch to the finish (top border -> right wall -> shaft)",
     "level": 3214,
     "character": 4,
@@ -57,7 +57,7 @@
     "listeners_state_trace": "reference/traces/flash32/gbe-qe-finish-f217-listeners-v1.jsonl"
   },
   {
-    "file": "satanqe-finish-f125.tas",
+    "file": "finishes/satanqe-finish-f125.tas",
     "name": "A large Satan eats u: one-frame QE launch to the finish (top border -> right wall -> pocket)",
     "level": 2433,
     "character": 4,
@@ -69,7 +69,7 @@
     "listeners_state_trace": "reference/traces/flash32/satan-qe-finish-f125-listeners-v1.jsonl"
   },
   {
-    "file": "satanqe-finish-f125-fp23.tas",
+    "file": "finishes/satanqe-finish-f125-fp23.tas",
     "name": "A large Satan eats u: one-frame QE finish with 23 frame-perfect inputs (the first solve has 33)",
     "level": 2433,
     "character": 4,
@@ -81,7 +81,7 @@
     "listeners_state_trace": "reference/traces/flash32/satan-qe-finish-f125-fp23-listeners-v1.jsonl"
   },
   {
-    "file": "gbeqe-finish-f227-fp15.tas",
+    "file": "finishes/gbeqe-finish-f227-fp15.tas",
     "name": "Gut Bus Extreme: one-frame QE finish with 15 frame-perfect inputs (the first solve has 27), 10 frames slower",
     "level": 3214,
     "character": 4,

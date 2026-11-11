@@ -13,7 +13,7 @@ its CRT math is the measured reference implementation (see `docs/MATH.md`).
 ## Commands
 
 ```powershell
-hw sim --level 13098 --char 2 --tas reference/tas/dotd6.tas --out dotd6-cpu.jsonl --dump-from 200 --dump-to 208
+hw sim --level 13098 --char 2 --tas reference/tas/official/dotd6.tas --out dotd6-cpu.jsonl --dump-from 200 --dump-to 208
 hw verify --trace reference/traces/flash32/tas-dotd_pairmax_1-diagnostic-v1.jsonl
 hw gen-inputs --level 45 --char 3 --seed 12345 --frames 600 --style forward-jumpy
 hw bench --threads 8

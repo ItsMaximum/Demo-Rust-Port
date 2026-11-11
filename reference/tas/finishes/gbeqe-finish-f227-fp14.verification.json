@@ -8,7 +8,7 @@
   "frame_perfect": 14,
   "raw_key_events": 21,
   "structural_cost": 15,
-  "tas": "reference/tas/gbeqe-finish-f227-fp14.tas",
+  "tas": "reference/tas/finishes/gbeqe-finish-f227-fp14.tas",
   "tas_entries": 227,
   "tas_sha256": "44d3097a8fa6d0462cefdd54484a2be21f62f013e9d72d8f5715a06086f87a06",
   "trace": "reference/traces/flash32/gbe-qe-finish-f227-fp14-listeners-v2.jsonl",

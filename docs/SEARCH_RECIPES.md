@@ -21,8 +21,8 @@ in that time.
 ## 1. Replay a found run
 
 ```powershell
-& $hw sim --level 3214 --char 4 --tas reference/tas/gbeqe-finish-f227-fp15.tas   # finish 227
-& $hw sim --level 2433 --char 4 --tas reference/tas/satanqe-finish-f125-fp23.tas # finish 125
+& $hw sim --level 3214 --char 4 --tas reference/tas/finishes/gbeqe-finish-f227-fp15.tas   # finish 227
+& $hw sim --level 2433 --char 4 --tas reference/tas/finishes/satanqe-finish-f125-fp23.tas # finish 125
 ```
 
 `hw sim` prints `simulated N frames; finish F` on the last line (stderr) and one JSON record per frame on
@@ -31,14 +31,14 @@ stdout. Add `--out file.jsonl` to keep the records.
 Confirm that a string finishes from a one-frame chest launch, replayed from scratch:
 
 ```powershell
-& $search confirm --level 3214 --char 4 --tas reference/tas/gbeqe-finish-f217.tas
+& $search confirm --level 3214 --char 4 --tas reference/tas/finishes/gbeqe-finish-f217.tas
 # confirmed: finish frame 217, chest moved 250.5 m in that frame
 ```
 
 ## 2. Look at a launch
 
 ```powershell
-& $search analyze --level 3214 --char 4 --tas reference/tas/gbeqe-finish-f217.tas --from 215 --to 217
+& $search analyze --level 3214 --char 4 --tas reference/tas/finishes/gbeqe-finish-f217.tas --from 215 --to 217
 ```
 
 One JSON line per frame with the chest's solved path (`chest_solve`, `chest_tois`), `displacement`,
@@ -50,7 +50,7 @@ One JSON line per frame with the chest's solved path (`chest_solve`, `chest_tois
 frame. The shipped `gbeqe.tas` runs on past its launch at frame 220, so cut it first:
 
 ```powershell
-$bits = (Get-Content -Raw reference/tas/gbeqe.tas).Trim()
+$bits = (Get-Content -Raw reference/tas/qe-seeds/gbeqe.tas).Trim()
 New-Item -ItemType Directory -Force runs | Out-Null
 Set-Content -Path runs/gbeqe-220.tas -Value $bits.Substring(0, 220 * 8) -NoNewline
 
@@ -80,7 +80,7 @@ A two-minute check (`--hours 0.03`) produced about nine `best-*.tas` files and n
 `run` explores grab and pose inputs from the same seed and stops at the first winner it can confirm:
 
 ```powershell
-& $search run --level 3214 --char 4 --run-dir runs/gbe-run --seeds reference/tas/gbeqe.tas --region 15,55,30,75 --max-frame 330 --min-launch 60 --hours 8
+& $search run --level 3214 --char 4 --run-dir runs/gbe-run --seeds reference/tas/qe-seeds/gbeqe.tas --region 15,55,30,75 --max-frame 330 --min-launch 60 --hours 8
 ```
 
 In a seven-minute check this ended with a best miss of about 10 m and no winner; the results shipped here took
@@ -92,10 +92,10 @@ Every key event that changes the simulation before the launch must land on exact
 and strip the unnecessary ones:
 
 ```powershell
-& $search x cost --tas reference/tas/gbeqe-finish-f217.tas,reference/tas/gbeqe-finish-f227-fp15.tas
+& $search x cost --tas reference/tas/finishes/gbeqe-finish-f217.tas,reference/tas/finishes/gbeqe-finish-f227-fp15.tas
 # cost 27, 42 events  and  cost 15, 19 events
 
-& $search canon --level 3214 --char 4 --tas reference/tas/gbeqe-finish-f217.tas --limit 277 | Out-File -Encoding ascii runs/gbe-canon.tas
+& $search canon --level 3214 --char 4 --tas reference/tas/finishes/gbeqe-finish-f217.tas --limit 277 | Out-File -Encoding ascii runs/gbe-canon.tas
 # the summary {"events":36,"finish":217,"frame_perfect":27} is printed to the console
 ```
 
@@ -115,7 +115,7 @@ run on 14 threads found no improvement over the 27-event string, so budget accor
 `tail` instead keeps the string up to a cut point and tries every low-input tail:
 
 ```powershell
-& $search tail --level 3214 --char 4 --tas reference/tas/gbeqe-finish-f217.tas --cut 200 --window 20 --k 1 --limit 277 --run-dir runs/gbe-tail
+& $search tail --level 3214 --char 4 --tas reference/tas/finishes/gbeqe-finish-f217.tas --cut 200 --window 20 --k 1 --limit 277 --run-dir runs/gbe-tail
 ```
 
 (221 tails, about a second.) Raise `--k` and `--window` for a wider search; the number of tails grows quickly.

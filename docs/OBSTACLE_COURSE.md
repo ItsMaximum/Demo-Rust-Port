@@ -19,7 +19,7 @@ target/i686-pc-windows-msvc/release/obby-search.exe help
 
 Run directories (`--run-dir`) are plain folders; create them under `runs/`, which is git-ignored.
 Seed files are JSON lines with a `tas` field of 0/1 bits (8 per frame). Starting points shipped in
-`reference/tas/` include `obstacle-dad-*.tas` and `obstacle-pairmax-f274.tas`.
+`reference/tas/obstacle-course/` include `obstacle-dad-*.tas` and `obstacle-pairmax-f274.tas`.
 
 Searches that score open-sky states use flight maps: the output of `flight`, which teleports Dad's
 jointed component into open sky with a sampled velocity and plays the unchanged engine to frame 299.

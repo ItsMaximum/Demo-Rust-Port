@@ -1010,9 +1010,9 @@ mod tests {
             // Native member2035: F89 rank c054dbd64bf74a39, death90.
             // This regression literal has not been matched to original Flash.
             let fatal=super::super::sim::parse_tas(include_str!(concat!(env!("CARGO_MANIFEST_DIR"),
-                "/../../reference/tas/obstacle-dad-native-fatal-f90.tas"))).unwrap();
+                "/../../reference/tas/obstacle-course/obstacle-dad-native-fatal-f90.tas"))).unwrap();
             let living=super::super::sim::parse_tas(include_str!(concat!(env!("CARGO_MANIFEST_DIR"),
-                "/../../reference/tas/obstacle-dad-burst-f178.tas"))).unwrap();
+                "/../../reference/tas/obstacle-course/obstacle-dad-burst-f178.tas"))).unwrap();
             for (i,masks) in [fatal,living].into_iter().enumerate() {for route_checkpoints in [false,true] {
                 let stamp=std::time::SystemTime::now().duration_since(std::time::UNIX_EPOCH).unwrap().as_nanos();
                 let dir=std::env::temp_dir().join(format!("hw-launch-survival-{}-{stamp}-{i}",std::process::id()));
@@ -1100,7 +1100,7 @@ mod tests {
                 // 770e410f2d831532335dcad5bbc4bf0b30de38fde235686a0d3852338ade5d2c.
                 // The f178 label describes its living-Dad burst, not a finish.
                 let bits=include_str!(concat!(env!("CARGO_MANIFEST_DIR"),
-                    "/../../reference/tas/obstacle-dad-burst-f178.tas"));
+                    "/../../reference/tas/obstacle-course/obstacle-dad-burst-f178.tas"));
                 assert_eq!(bits.len(),299*8);assert!(bits.bytes().all(|b|b==b'0'||b==b'1'));
                 let original=super::super::sim::parse_tas(bits).unwrap();
                 assert_eq!(tas_text(&original),bits);

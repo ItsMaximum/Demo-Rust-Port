@@ -1395,10 +1395,10 @@ mod raw_tests {
         std::thread::Builder::new().stack_size(64<<20).spawn(|| {
             let _hang=super::super::sim::HangOverride::new(0);super::super::sim::set_lag_ms(0.0);
             let fixtures=[
-                ("original",include_str!("../../../../reference/tas/obstacle-dad-ceiling-strand-f143.tas")),
-                ("roof",include_str!("../../../../reference/tas/obstacle-dad-roofsolve-f143.tas")),
-                ("f274",include_str!("../../../../reference/tas/obstacle-pairmax-f274.tas")),
-                ("late353",include_str!("../../../../reference/tas/obstacle-dad-late-overflow-f291.tas"))];
+                ("original",include_str!("../../../../reference/tas/obstacle-course/obstacle-dad-ceiling-strand-f143.tas")),
+                ("roof",include_str!("../../../../reference/tas/obstacle-course/obstacle-dad-roofsolve-f143.tas")),
+                ("f274",include_str!("../../../../reference/tas/obstacle-course/obstacle-pairmax-f274.tas")),
+                ("late353",include_str!("../../../../reference/tas/obstacle-course/obstacle-dad-late-overflow-f291.tas"))];
             let observers=|s:&Sim|[hw_core::diagnostic::broadphase_string(&s.ctx),
                 hw_core::physics_observer::physics_string(&s.ctx),hw_core::game_observer::game_string(&s.ctx),
                 hw_core::links_observer::links_string(&s.ctx),hw_core::mechanics_observer::mechanics_string(&s.ctx)];
@@ -1564,10 +1564,10 @@ mod raw_tests {
         std::thread::Builder::new().stack_size(64<<20).spawn(||{
             let _hang=super::super::sim::HangOverride::new(0);super::super::sim::set_lag_ms(0.0);
             let fixtures=[
-                ("original",include_str!("../../../../reference/tas/obstacle-dad-ceiling-strand-f143.tas")),
-                ("roof",include_str!("../../../../reference/tas/obstacle-dad-roofsolve-f143.tas")),
-                ("f274",include_str!("../../../../reference/tas/obstacle-pairmax-f274.tas")),
-                ("late353",include_str!("../../../../reference/tas/obstacle-dad-late-overflow-f291.tas"))];
+                ("original",include_str!("../../../../reference/tas/obstacle-course/obstacle-dad-ceiling-strand-f143.tas")),
+                ("roof",include_str!("../../../../reference/tas/obstacle-course/obstacle-dad-roofsolve-f143.tas")),
+                ("f274",include_str!("../../../../reference/tas/obstacle-course/obstacle-pairmax-f274.tas")),
+                ("late353",include_str!("../../../../reference/tas/obstacle-course/obstacle-dad-late-overflow-f291.tas"))];
             let observers=|s:&Sim|[hw_core::diagnostic::broadphase_string(&s.ctx),
                 hw_core::physics_observer::physics_string(&s.ctx),hw_core::game_observer::game_string(&s.ctx),
                 hw_core::links_observer::links_string(&s.ctx),hw_core::mechanics_observer::mechanics_string(&s.ctx)];

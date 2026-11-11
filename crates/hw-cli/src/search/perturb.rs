@@ -971,7 +971,7 @@ mod tests {
 
             // Actual Flash-verified fixture: no generated physics or altered core state.
             let fixture = std::path::PathBuf::from(env!("CARGO_MANIFEST_DIR"))
-                .join("../../reference/tas/gbeqe-finish-f217.tas");
+                .join("../../reference/tas/finishes/gbeqe-finish-f217.tas");
             let source_bytes = std::fs::read(&fixture).unwrap();
             let source_text = std::str::from_utf8(&source_bytes).unwrap();
             let original = super::super::sim::parse_tas(source_text).unwrap();

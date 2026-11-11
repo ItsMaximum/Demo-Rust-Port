@@ -1,6 +1,6 @@
 [
   {
-    "file": "dotd_pairmax_1.tas",
+    "file": "official/dotd_pairmax_1.tas",
     "trace_stem": "dotd_pairmax_1",
     "const": "LIB_DOTD_PAIRMAX_1",
     "name": "dotd pair maxing 1 - pair overflow frame 233",
@@ -17,7 +17,7 @@
     "listeners_state_trace": "reference/traces/flash32/tas-dotd_pairmax_1-listeners-v1.jsonl"
   },
   {
-    "file": "gbe_err_1.tas",
+    "file": "official/gbe_err_1.tas",
     "trace_stem": "gbe_err_1",
     "const": "LIB_GBE_ERR_1",
     "name": "gbe error without a pairmax",
@@ -34,7 +34,7 @@
     "listeners_state_trace": "reference/traces/flash32/tas-gbe_err_1-listeners-v1.jsonl"
   },
   {
-    "file": "gbe_freeze_2.tas",
+    "file": "official/gbe_freeze_2.tas",
     "trace_stem": "gbe_freeze_2",
     "const": "LIB_GBE_FREEZE_2",
     "name": "gbe freeze 2",
@@ -51,7 +51,7 @@
     "listeners_state_trace": "reference/traces/flash32/tas-gbe_freeze_2-listeners-v1.jsonl"
   },
   {
-    "file": "dotd6.tas",
+    "file": "official/dotd6.tas",
     "trace_stem": "dotd6",
     "const": "LIB_DOTD6",
     "name": "dotd 6 buffer button launch",
@@ -68,7 +68,7 @@
     "listeners_state_trace": "reference/traces/flash32/tas-dotd6-listeners-v1.jsonl"
   },
   {
-    "file": "snowy.tas",
+    "file": "official/snowy.tas",
     "trace_stem": "snowy",
     "const": "LIB_SNOWY",
     "name": "snowy mountain 11.43",
@@ -85,7 +85,7 @@
     "listeners_state_trace": "reference/traces/flash32/tas-snowy-listeners-v1.jsonl"
   },
   {
-    "file": "bmx1003.tas",
+    "file": "official/bmx1003.tas",
     "trace_stem": "bmx1003",
     "const": "LIB_BMX1003",
     "name": "bmx park II 10.03",
@@ -102,7 +102,7 @@
     "listeners_state_trace": "reference/traces/flash32/tas-bmx1003-listeners-v1.jsonl"
   },
   {
-    "file": "bmx610_v98.tas",
+    "file": "official/bmx610_v98.tas",
     "trace_stem": "bmx610",
     "const": "LIB_BMX610",
     "name": "bmx park II 6.10 (hw_all_v98 LIB_BMX610 as shipped; desyncs, see launches.json)",
@@ -119,7 +119,7 @@
     "listeners_state_trace": "reference/traces/flash32/tas-bmx610-listeners-v1.jsonl"
   },
   {
-    "file": "dotd4.tas",
+    "file": "official/dotd4.tas",
     "trace_stem": "dotd4",
     "const": "LIB_DOTD4",
     "name": "dotd 4 buffer button launch",

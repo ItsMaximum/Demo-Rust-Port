@@ -1468,7 +1468,7 @@ mod tests {
         production_test(|| {
         let _hang=super::super::sim::HangOverride::new(0);super::super::sim::set_lag_ms(0.0);
         // Exact full299 seed1555 raw SHA19028f1b3f6acc1f9f8d18339e1a07d53a36b86bc1c45d4cec89659041f068af.
-        let masks=super::super::sim::parse_tas(include_str!("../../../../reference/tas/obstacle-dad-upward-f83.tas")).unwrap();assert_eq!(masks.len(),299);
+        let masks=super::super::sim::parse_tas(include_str!("../../../../reference/tas/obstacle-course/obstacle-dad-upward-f83.tas")).unwrap();assert_eq!(masks.len(),299);
         let mut s=Sim::new(45,3).unwrap();s.replay=ReplayState::new(299);s.masks=masks.clone();let ceiling=find_world_ceiling(&s).unwrap();
         for frame in 1..=83 {let (f,o,e,_,_)=capture_step(&mut s,ceiling);assert_eq!(f.mask,masks[frame as usize-1]);
             assert_eq!(o.iteration_after,frame);if frame==83 {let solve=e.solve.unwrap();
@@ -1486,7 +1486,7 @@ mod tests {
         production_test(|| {
             let _hang=super::super::sim::HangOverride::new(0);super::super::sim::set_lag_ms(0.0);
             // Original-Flash-matched exact299 a83b49b98fcf668a42b9b357b695c68d9d89d6c58e892a4d6d4c344481bc59b7.
-            let masks=super::super::sim::parse_tas(include_str!("../../../../reference/tas/obstacle-dad-ceiling-strand-f143.tas")).unwrap();
+            let masks=super::super::sim::parse_tas(include_str!("../../../../reference/tas/obstacle-course/obstacle-dad-ceiling-strand-f143.tas")).unwrap();
             assert_eq!(masks.len(),299);let mut s=Sim::new(45,3).unwrap();s.replay=ReplayState::new(299);s.masks=masks.clone();
             let ceiling=find_world_ceiling(&s).unwrap();let mut witnessed=false;
             for frame in 1..=299 {let (f,o,e,_,_)=capture_step(&mut s,ceiling);
@@ -1513,7 +1513,7 @@ mod tests {
     fn bmx_dead_after_finish_still_exposes_primary_solve_and_solved_world_ceiling() {
         production_test(|| {
         let _hang=super::super::sim::HangOverride::new(0);super::super::sim::set_lag_ms(0.0);
-        let raw=include_str!("../../../../reference/tas/bmx610.tas");let masks=super::super::sim::parse_tas(raw).unwrap();
+        let raw=include_str!("../../../../reference/tas/official/bmx610.tas");let masks=super::super::sim::parse_tas(raw).unwrap();
         let mut s=Sim::new(13196,3).unwrap();s.replay=ReplayState::new(masks.len() as u32);s.masks=masks.clone();let ceiling=find_world_ceiling(&s).unwrap();
         for frame in 1..=183 {let (f,o,e,_,_)=capture_step(&mut s,ceiling);assert_eq!(f.frame,frame);assert_eq!(f.mask,masks[frame as usize-1]);
             if frame==183 {assert!(f.finished);assert!(!o.after.alive);let solve=e.solve.unwrap();
@@ -1553,7 +1553,7 @@ mod tests {
             // Timing is controlled, not a new lag or Flash qualification. No injection or state edits.
             let _hang=super::super::sim::HangOverride::new(0);super::super::sim::set_lag_ms(0.0);
             // Exact Flash-MATCH299 fixture SHA8354697bc66d72e9c677884f569d231018f7528b7a097471acb3d295f609754b.
-            let masks=full299_fixture(include_str!("../../../../reference/tas/obstacle-pairmax-f274.tas"));
+            let masks=full299_fixture(include_str!("../../../../reference/tas/obstacle-course/obstacle-pairmax-f274.tas"));
             let mut s=Sim::new(45,3).unwrap();s.replay=ReplayState::new(299);s.masks=masks.clone();
             let ceiling=find_world_ceiling(&s).unwrap();let mut witness=None;let mut recovered=false;
             for frame in 1..=299 {
@@ -1608,9 +1608,9 @@ mod tests {
         production_test(|| {
             let _hang=super::super::sim::HangOverride::new(0);super::super::sim::set_lag_ms(0.0);
             let fixtures=[
-                ("original",include_str!("../../../../reference/tas/obstacle-dad-ceiling-strand-f143.tas")),
-                ("roof",include_str!("../../../../reference/tas/obstacle-dad-roofsolve-f143.tas")),
-                ("f274",include_str!("../../../../reference/tas/obstacle-pairmax-f274.tas"))];
+                ("original",include_str!("../../../../reference/tas/obstacle-course/obstacle-dad-ceiling-strand-f143.tas")),
+                ("roof",include_str!("../../../../reference/tas/obstacle-course/obstacle-dad-roofsolve-f143.tas")),
+                ("f274",include_str!("../../../../reference/tas/obstacle-course/obstacle-pairmax-f274.tas"))];
             for (name,raw) in fixtures {
                 let masks=full299_fixture(raw);let mut off=Sim::new(45,3).unwrap();let mut on=Sim::new(45,3).unwrap();
                 off.replay=ReplayState::new(299);off.masks=masks.clone();on.replay=ReplayState::new(299);on.masks=masks.clone();
@@ -1653,9 +1653,9 @@ mod tests {
         production_test(|| {
             let _hang=super::super::sim::HangOverride::new(0);super::super::sim::set_lag_ms(0.0);
             let fixtures=[
-                ("original",include_str!("../../../../reference/tas/obstacle-dad-ceiling-strand-f143.tas")),
-                ("roof",include_str!("../../../../reference/tas/obstacle-dad-roofsolve-f143.tas")),
-                ("f274",include_str!("../../../../reference/tas/obstacle-pairmax-f274.tas"))];
+                ("original",include_str!("../../../../reference/tas/obstacle-course/obstacle-dad-ceiling-strand-f143.tas")),
+                ("roof",include_str!("../../../../reference/tas/obstacle-course/obstacle-dad-roofsolve-f143.tas")),
+                ("f274",include_str!("../../../../reference/tas/obstacle-course/obstacle-pairmax-f274.tas"))];
             for (name,raw) in fixtures {
                 let masks=full299_fixture(raw);let mut off=Sim::new(45,3).unwrap();let mut on=Sim::new(45,3).unwrap();
                 off.replay=ReplayState::new(299);off.masks=masks.clone();on.replay=ReplayState::new(299);on.masks=masks.clone();

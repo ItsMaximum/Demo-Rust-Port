@@ -14,7 +14,7 @@ fn check(level: u32, character: u32, style: &'static str) {
         .spawn(move || {
             let root = format!("{}/../..", env!("CARGO_MANIFEST_DIR"));
             let name = format!("coverage-v1-L{level}-C{character}-{style}");
-            let bits = std::fs::read_to_string(format!("{root}/reference/tas/extra/{name}.tas"))
+            let bits = std::fs::read_to_string(format!("{root}/reference/tas/coverage/{name}.tas"))
                 .unwrap()
                 .split_whitespace()
                 .collect::<String>();
